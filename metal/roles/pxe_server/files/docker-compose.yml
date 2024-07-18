@@ -14,9 +14,8 @@ services:
       - NET_ADMIN
   http:
     build: ./http
-    network_mode: host
     volumes:
       - ./data/os:/usr/share/nginx/html/os
       - ./data/init-config/:/usr/share/nginx/html/init-config
-    environment:
-      NGINX_PORT: 80
+    ports:
+      - 1234:80

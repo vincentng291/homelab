@@ -67,7 +67,7 @@ rook-ceph-cluster:
               size: 2
         metadataServer:
           activeCount: 1
-          activeStandby: true
+          activeStandby: false
           resources:
             limits:
               memory: "4Gi"
